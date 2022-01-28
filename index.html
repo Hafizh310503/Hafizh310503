@@ -1,0 +1,81 @@
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+<body>
+<img src="Manchesterunited.jfif" style="width:100%; height:40%">
+
+<div class="w3-bar w3-black">
+	<button class="w3-bar-item w3-button" onclick="openKota('pelatih')">Ralf Rangnick</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('stadion')">Stadion</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('ronaldo')">Cristiano Ronaldo</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('bruno')">Bruno Fernandes</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('rashford')">Marcus Rashford</button>
+	<button class="w3-bar-item w3-button" onclick="openKota('Profil')">Profil</button>
+</div>
+
+<div id="Home" class="w3-container kota kota w3-animate-fading" style="">
+<center>
+<h3>WELCOME</h3>
+<hr>
+<h4>MANCHESTER UNITED</h4>
+</div>
+
+<div id="pelatih" class="w3-container kota w3-animate-zoom" style="display:none">
+	<h2>Ralf Rangnick</h2>
+	<p>Ralf Rangnick adalah manajer, eksekutif, dan mantan pemain sepak bola profesional berkebangsaan Jerman 
+	yang saat ini menjabat sebagai manajer sementara klub Liga Premier Manchester United.</p>
+	<img src="Ralf.jfif" style="width:40%; height:30%">
+</div>
+
+<div id="stadion" class="w3-container kota kota w3-animate-top" style="display:none">
+	<h2>Old Trafford</h2>
+	<p>Old Trafford adalah sebuah stadion sepak bola yang berlokasi di Old Trafford,
+	Greater Manchester, Inggris, dan merupakan markas klub sepak bola Manchester United (MU). 
+	Dengan kapasitas sekitar 76.000 kursi, stadion ini merupakan stadion terbesar ketiga dan
+	stadion sepak bola terbesar kedua di Inggris setelah Stadion Wembley , serta stadion kesembilan terbesar di Eropa. </p>
+	<img src="oldtrafford.jfif" style="width:40%; height:30%">
+</div>
+
+<div id="ronaldo" class="w3-container kota kota w3-animate-left" style="display:none">
+	<h2>Cristiano Ronaldo</h2>
+	<p>Cristiano Ronaldo lahir 5 Februari 1985) adalah seorang pemain sepak bola profesional asal Portugal 
+	yang bermain sebagai penyerang untuk klub Liga Utama Inggris, Manchester United dan juga kapten untuk tim nasional Portugal.</p>
+	<img src="ronaldo.jfif" style="width:30%; height:30%">
+</div>
+
+<div id="bruno" class="w3-container kota kota w3-animate-right" style="display:none">
+	<h2>Bruno Fernandes</h2>
+	<p>Bruno Miguel Borges Fernandes adalah seorang pemain sepak bola asal Portugal
+	yang saat ini bermain sebagai gelandang di tim Manchester United F.C. dan tim nasional sepak bola Portugal.</p>
+	<img src="bruno.jfif" style="width:30%; height:30%">
+</div>
+
+<div id="rashford" class="w3-container kota kota w3-animate-bottom" style="display:none">
+	<h2>Marcus Rashford</h2>
+	<p>Marcus Rashford MBE (lahir 31 Oktober 1997) adalah seorang pemain sepak bola profesional untuk Manchester United dan tim nasional Inggris.
+	Rashford mencetak dua gol pada pertandingan debutnya bersama tim senior menghadapi Midtjylland di UEFA Europa League. Dia juga mencetak gol
+	melawan Arsenal saat debut di Premier League. Selama berseragam dengan United, Rashford telah menjuarai FA Cup, EFL Cup, FA Community Shield dan UEFA Europa League.</p>
+	<img src="rashford.jpg" style="width:30%; height:30%">
+</div>
+
+<div id="Profil" class="w3-container kota kota w3-animate-bottom w3-center" style="display:none">
+	<h2>Profil</h2>
+	<p>NAMA : Muhammad Hafizh Arrosyidu </p> 
+	 <p>NIM : 10121065 </p> 
+	 <p>KELAS : IF 2 </p>
+	<img src="IMG_20210307_103608.JPG" style="width:30%;">
+</div>
+
+<script>
+function openKota(namaKota) {
+var i;
+var x = document.getElementsByClassName("kota");
+for (i = 0; i < x.length; i++) {
+x[i].style.display = "none";
+}
+document.getElementById(namaKota).style.display = "block";
+}
+</script>
+</body>
+</html>
